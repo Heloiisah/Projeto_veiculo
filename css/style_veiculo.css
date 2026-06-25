@@ -3,105 +3,88 @@ body {
     background-color: #8e599b;
 }
 
-h3 {
-    color: white;
-    text-align: center;
-    font-size: 28px;
-    margin-top: 30px;
-}
-
-h4 {
-    text-align: center;
-    color: #555;
-    margin: 20px 0;
-}
-
-#div-form {
-    background-color: rgb(186, 188, 189);
-    width: 600px;
+#geral {
+    width: 700px;
+    min-height: 600px;
+    padding: 10px;
     margin: 20px auto;
-    padding: 30px 20px;
-    border-radius: 15px;
+    font-family: Verdana;
 }
 
-#form-veiculo > div {
+h3 {
     text-align: center;
-    margin-bottom: 12px;
+    color: white;
 }
 
-#form-veiculo label {
+#div-form, #div-dados {
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0px;
+    background-color: rgb(186, 188, 189);
+    color: #000000;
+}
+
+#form-veiculo {
+    padding: 15px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+label, input {
     display: inline-block;
-    width: 150px;
+    margin: 10px 0px;
+}
+
+label {
+    width: 280px;
     text-align: right;
-    margin-right: 10px;
 }
 
-#form-veiculo input[type="text"],
-#form-veiculo input[type="number"] {
-    display: inline-block;
-    width: 200px;
-    height: 25px;
-    border: 1px solid #aaa;
-    border-radius: 3px;
+input {
+    width: 300px;
+    height: 30px;
 }
 
-#div-radios {
-    text-align: center;
-    margin: 15px 0;
-}
-
-#div-radios label {
-    display: inline-block;
-    width: auto;
-    text-align: left;
-    margin-right: 15px;
-    margin-left: 5px;
-}
-
-#div-radios input[type="radio"] {
-    display: inline-block;
-    width: auto;
-    height: auto;
-    margin: 0;
-}
-
-#div-botoes {
+p {
     text-align: center;
     margin-top: 20px;
 }
 
-#div-botoes button {
-    display: inline-block;
-    width: 100px;
-    height: 35px;
-    background-color: #5a2d82;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin: 0 5px;
-    cursor: pointer;
+#div-radios {
+    width: 100%;
+    text-align: center;
 }
 
-#div-botoes button:hover {
-    background-color: #3f1f5b;
+#div-radios label, #div-radios input {
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+#div-radios label {
+    width: auto;
+    text-align: left;
+}
+
+#div-radios input {
+    width: 15px;
+    height: 15px;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    background-color: #5a2d82;
+    color: white;
+    display: inline-block;
+    margin: 10px;
 }
 
 #div-dados {
     background-color: aliceblue;
-    width: 600px;
     min-height: 100px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 15px;
-}
-
-#div-dados h3 {
-    margin-top: 0;
-    margin-bottom: 20px;
 }
 
 #veiculo {
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid gray;
+    margin: 20px 0px;
+    padding: 10px;
 }

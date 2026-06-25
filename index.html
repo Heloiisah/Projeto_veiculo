@@ -13,40 +13,29 @@
 
     <div id="geral">
 
-        <h3>Cadastro de Veículos</h3>
+        <h3>Cadastro de Veículo</h3>
 
         <div id="div-form">
-            <h4>Dados do Veículo</h4>
             <form id="form-veiculo">
 
-                <div id="linha-modelo">
-                    <label for="modelo">Modelo</label>
-                    <input type="text" name="modelo" id="modelo" required>
-                </div>
+                <label for="modelo">Modelo</label>
+                <input type="text" name="modelo" id="modelo">
 
-                <div id="linha-marca">
-                    <label for="marca">Marca</label>
-                    <input type="text" name="marca" id="marca" required>
-                </div>
+                <label for="marca">Marca</label>
+                <input type="text" name="marca" id="marca">
 
-                <div id="linha-placa">
-                    <label for="placa">Placa</label>
-                    <input type="text" name="placa" id="placa" required>
-                </div>
+                <label for="placa">Placa</label>
+                <input type="text" name="placa" id="placa">
 
-                <div id="linha-ano">
-                    <label for="ano_fabricacao">Ano</label>
-                    <input type="number" name="ano_fabricacao" id="ano_fabricacao" required>
-                </div>
+                <label for="ano_fabricacao">Ano de fabricação</label>
+                <input type="text" name="ano_fabricacao" id="ano_fabricacao">
 
-                <div id="linha-valor">
-                    <label for="valor_mercado">Valor do Veículo</label>
-                    <input type="number" step="0.01" name="valor_mercado" id="valor_mercado" required>
-                </div>
+                <label for="valor_mercado">Valor de mercado do veículo</label>
+                <input type="text" name="valor_mercado" id="valor_mercado">
 
-                <h4>Combustível</h4>
+                <p>Tipo de combustível:</p>
                 <div id="div-radios">
-                    <input type="radio" name="tipo_combustivel" id="gasolina" value="gasolina" required>
+                    <input type="radio" name="tipo_combustivel" id="gasolina" value="gasolina">
                     <label for="gasolina">Gasolina</label>
                     
                     <input type="radio" name="tipo_combustivel" id="etanol" value="etanol">
@@ -62,10 +51,13 @@
                     <label for="eletrico">Elétrico</label>
                 </div>
 
-                <div id="div-botoes">
-                    <button type="submit" id="btn-add">Enviar</button>
-                    <button type="reset" id="btn-limpar">Limpar</button>
-                </div>
+                <button type="submit" id="btn-add">
+                    Adicionar
+                </button>
+
+                <button type="reset" id="btn-limpar">
+                    Limpar
+                </button>
 
             </form>
         </div>

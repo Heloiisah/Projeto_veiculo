@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Veículos</title>
-    <!-- <link rel="stylesheet" href="css/style_veiculo.css"> -->
+    <link rel="stylesheet" href="css/style_veiculo.css">
     <script src="js/script_veiculo.js" type="module" defer></script>
 </head>
 
@@ -15,7 +15,7 @@
 
         <h3>Cadastro de Veículo</h3>
 
-        <div id="div-form-veiculo">
+        <div id="div-form">
             <form id="form-veiculo">
 
                 <label for="modelo">Modelo</label>
@@ -39,20 +39,20 @@
                 <br><br>
 
                 <p>Tipo de combustível:</p>
-                <input type="radio" name="tipo_combustivel" id="gasolina" value="gasolina" required>
-                <label for="gasolina">Gasolina</label>
+                <input type="radio" name="tipo_combustivel" id="gasolina" value="gasolina" required style="display: inline; width: auto; height: auto;">
+                <label for="gasolina" style="display: inline;">Gasolina</label>
                 
-                <input type="radio" name="tipo_combustivel" id="etanol" value="etanol">
-                <label for="etanol">Etanol</label>
+                <input type="radio" name="tipo_combustivel" id="etanol" value="etanol" style="display: inline; width: auto; height: auto;">
+                <label for="etanol" style="display: inline;">Etanol</label>
                 
-                <input type="radio" name="tipo_combustivel" id="bicombustivel" value="bicombustivel">
-                <label for="bicombustivel">Bicombustível</label>
+                <input type="radio" name="tipo_combustivel" id="bicombustivel" value="bicombustivel" style="display: inline; width: auto; height: auto;">
+                <label for="bicombustivel" style="display: inline;">Bicombustível</label>
                 
-                <input type="radio" name="tipo_combustivel" id="hibrido" value="hibrido">
-                <label for="hibrido">Híbrido</label>
+                <input type="radio" name="tipo_combustivel" id="hibrido" value="hibrido" style="display: inline; width: auto; height: auto;">
+                <label for="hibrido" style="display: inline;">Híbrido</label>
                 
-                <input type="radio" name="tipo_combustivel" id="eletrico" value="eletrico">
-                <label for="eletrico">Elétrico</label>
+                <input type="radio" name="tipo_combustivel" id="eletrico" value="eletrico" style="display: inline; width: auto; height: auto;">
+                <label for="eletrico" style="display: inline;">Elétrico</label>
                 <br><br>
 
                 <button type="submit" id="btn-add">
@@ -66,7 +66,7 @@
             </form>
         </div>
 
-        <div id="div-lista-veiculos">
+        <div id="div-dados">
 
         </div>
 

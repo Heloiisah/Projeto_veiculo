@@ -3,7 +3,7 @@ import { calcularIdade, calcularSeguro, calcularIpva } from './script_calculo.js
 
 // PEGANDO ELEMENTOS DO DOM
 const formVeiculo = document.querySelector('#form-veiculo');
-const divLista = document.querySelector('#div-lista-veiculos');
+const divLista = document.querySelector('#div-dados');
 
 // CRIANDO ARRAY DE VEÍCULOS
 const veiculos = [];
@@ -60,16 +60,17 @@ const listVeiculos = () => {
         const valorFinal = ipva === 'Isento' ? seguro : seguro + ipva;
 
         divLista.innerHTML += `
-            <hr>
-            <p><strong>Veículo ${i + 1}</strong></p>
-            <p>Modelo: ${elem.modelo}</p>
-            <p>Marca: ${elem.marca}</p>
-            <p>Placa: ${elem.placa}</p>
-            <p>Idade do veículo: ${idade} anos</p>
-            <p>Valor Seguro a pagar: ${formatarMoeda(seguro)}</p>
-            <p>Valor IPVA a pagar: ${formatarMoeda(ipva)}</p>
-            <p>Valor final: ${formatarMoeda(valorFinal)}</p>
-            <p>Licenciamento</p>
+            <div class="veiculo">
+                <p><strong>Veículo ${i + 1}</strong></p>
+                <p>Modelo: ${elem.modelo}</p>
+                <p>Marca: ${elem.marca}</p>
+                <p>Placa: ${elem.placa}</p>
+                <p>Idade do veículo: ${idade} anos</p>
+                <p>Valor Seguro a pagar: ${formatarMoeda(seguro)}</p>
+                <p>Valor IPVA a pagar: ${formatarMoeda(ipva)}</p>
+                <p>Valor final: ${formatarMoeda(valorFinal)}</p>
+                <p>Licenciamento</p>
+            </div>
         `;
     });
 };

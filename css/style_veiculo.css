@@ -3,53 +3,101 @@ body {
     background-color: #8e599b;
 }
 
-h1 {
-    color: white;
-}
-
 h3 {
     color: white;
-}
-
-h1,
-h3 {
     text-align: center;
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+h4 {
+    text-align: center;
+    color: #555;
+    margin: 20px 0;
 }
 
 #div-form {
     background-color: rgb(186, 188, 189);
-    width: 400px;
-    min-height: 350px;
+    width: 600px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 30px 20px;
+    border-radius: 15px;
 }
 
-label,
-input {
-    display: block;
-    margin: 10px 0px;
+#form-veiculo > div {
+    text-align: center;
+    margin-bottom: 12px;
 }
 
-input {
-    width: 100%;
-    height: 30px;
+#form-veiculo label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
 }
 
-button {
-    width: 100%;
+#form-veiculo input[type="text"],
+#form-veiculo input[type="number"] {
+    display: inline-block;
+    width: 200px;
+    height: 25px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+}
+
+#div-radios {
+    text-align: center;
+    margin: 15px 0;
+}
+
+#div-radios label {
+    display: inline-block;
+    width: auto;
+    text-align: left;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+#div-radios input[type="radio"] {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
+#div-botoes {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#div-botoes button {
+    display: inline-block;
+    width: 100px;
     height: 35px;
     background-color: #5a2d82;
     color: white;
     border: none;
-    margin-top: 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#div-botoes button:hover {
+    background-color: #3f1f5b;
 }
 
 #div-dados {
     background-color: aliceblue;
-    width: 100%;
+    width: 600px;
     min-height: 100px;
-    margin: 20px 0px;
-    padding: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#div-dados h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 #veiculo {

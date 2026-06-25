@@ -52,7 +52,7 @@ button {
     padding: 10px;
 }
 
-.veiculo {
+#veiculo {
     margin-bottom: 15px;
     padding-bottom: 10px;
     border-bottom: 1px solid gray;

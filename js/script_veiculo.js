@@ -60,7 +60,7 @@ const listVeiculos = () => {
         const valorFinal = ipva === 'Isento' ? seguro : seguro + ipva;
 
         divLista.innerHTML += `
-            <div class="veiculo">
+            <div id="veiculo">
                 <p><strong>Veículo ${i + 1}</strong></p>
                 <p>Modelo: ${elem.modelo}</p>
                 <p>Marca: ${elem.marca}</p>

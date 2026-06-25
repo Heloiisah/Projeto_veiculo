@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8e599b;
+}
+
+h1 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+h1,
+h3 {
+    text-align: center;
+}
+
+#div-form {
+    background-color: rgb(186, 188, 189);
+    width: 400px;
+    min-height: 350px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+label,
+input {
+    display: block;
+    margin: 10px 0px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+}
+
+button {
+    width: 100%;
+    height: 35px;
+    background-color: #5a2d82;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+
+#div-dados {
+    background-color: aliceblue;
+    width: 100%;
+    min-height: 100px;
+    margin: 20px 0px;
+    padding: 10px;
+}
+
+.veiculo {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}

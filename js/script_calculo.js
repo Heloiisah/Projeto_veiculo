@@ -1,6 +1,6 @@
 // CRIANDO AS FUNÇÕES PARA OS CÁLCULOS
 const calcularIdade = (anoFabricacao) => {
-    const anoAtual = new Date().getFullYear();
+    const anoAtual = 2026
     return anoAtual - anoFabricacao;
 };
 
@@ -14,26 +14,19 @@ const calcularIpva = (idade, valorMercado, tipoCombustivel) => {
     }
 
     let ipva = 0;
-    switch (tipoCombustivel) {
-        case 'gasolina':
-            ipva = valorMercado * 0.20;
-            break;
-        case 'etanol':
-            ipva = valorMercado * 0.15;
-            break;
-        case 'bicombustivel':
-            ipva = valorMercado * 0.10;
-            break;
-        case 'hibrido':
-            ipva = valorMercado * 0.08;
-            break;
-        case 'eletrico':
-            ipva = valorMercado * 0.02;
-            break;
-        default:
-            ipva = 0;
+    if(tipoCombustivel == 'gasolina'){
+        ipva = valorMercado * 0.20;
+    }else if(tipoCombustivel == 'etanol'){
+        ipva = valorMercado * 0.15;
+    }else if(tipoCombustivel == 'bicombustivel'){
+        ipva = valorMercado * 0.10;
+    }else if(tipoCombustivel == 'hibrido'){
+        ipva = valorMercado * 0.08;
+    }else if(tipoCombustivel == 'eletrico'){
+        ipva = valorMercado * 0.02;
+    }else{
+        ipva = 0
     }
-    
     return ipva;
 };
 
